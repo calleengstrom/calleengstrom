@@ -55,13 +55,14 @@ These are some of the projects I’m currently working on or have completed as p
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=calleengstrom&layout=compact&theme=tokyonight&count_private=true)
 
+---
 
 ### Other Interests
 
 Outside of school and coding, I like to stay active and explore the world. Some of my personal interests include:
 
 - Traveling and discovering new cultures  
-- Fitness, outdoor activities, and hiking, including skiing  
+- Fitness, outdoor activities, and hiking, and most of all, skiing  
 - Playing video games  
 - Spending time in nature and enjoying small adventures  
 
