@@ -31,6 +31,10 @@ These are some of the projects I’m currently working on or have completed as p
 - **Memory_game** – C/C++,AVR,Arduino, hackathon challenge
 - **Cashregister** – Java,  school assignment
 
+### Current School Projects
+
+- **Small_Projects** - Here i post some of mine own small porjects im doing at home on my free time, for the sake of getting a better understanding and experience of Embedded / Networking programming.
+
 ---
 
 ###  Languages and Tools
