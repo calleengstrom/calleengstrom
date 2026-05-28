@@ -3,7 +3,7 @@
 <h3 align="left">Software Developer | Embedded & IoT Student</h3>
 <h3 align="left">About Me</h3>
 
-I’m 29 years old and based in Stockholm. I’m focused on problem solving, curious about technology and the world, and committed to continuous learning.  
+I’m 30 years old and based in Stockholm. I’m focused on problem solving, curious about technology and the world, and committed to continuous learning.  
 
 I’m currently studying **Embedded Systems and IoT**, where I build solid foundations in **C, C++, Java, and network programming**.  
 I enjoy exploring how hardware and software interact, experimenting with small projects, and learning new tools like docker, WSL independently outside of school.
