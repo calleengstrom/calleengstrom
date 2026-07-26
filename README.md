@@ -13,7 +13,7 @@ Some of my skills and tools i learn include:
 
 - Embedded systems & IoT projects  
 - Programming in C, C++, and Java  
-- WSL, Docker (self-taught)  
+- WSL, Docker,MySQL (self-taught, outside of school projects)  
 - Hands-on hardware prototyping  
 - Network programming, computer communications, and cloud integration 
 
