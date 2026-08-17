@@ -21,6 +21,30 @@ You can reach me at
 - **calle.engstrom@yh_nackademin.se**
 - **calle.eng@live.se**
 ---
+### My Projects
+
+- **[Climate Control System](https://github.com/calleengstrom/Temperature_iot_demo)**
+- A simple yet complete IoT system, composed of:
+    
+    
+    - **Sensor** – ESP32 DHT11 Temp / Hum Sensor <br>
+        Collects temperature and humidity data. Uses ESP-IDF’s Wi-Fi and HTTP library to transfer JSON data to the backend.
+    
+    - **Backend** – Java Spring (Kotlin) – Hibernate – MySQL  <br>
+        Java backend for receiving POST API requests from the ESP32 sensor and storing temperature records in a MySQL database. It also retrieves data from the MySQL database for various HTTP API calls.
+        Responsible for the rule set / rule engine with three different states/rules ("Normal", "High", "Low") regarding the temperature. Publishes the corresponding message to the MQTT broker on a set topic.
+    
+    - **MQTT** – Mosquitto MQTT Broker   <br>
+        Configured and set up a Mosquitto MQTT broker on my local LAN.
+        
+    - **Actuator** – ESP32 (Simulates climate control center) with RGB light  <br>
+        The ESP32 uses ESP-IDF’s Wi-Fi and MQTT library to subscribe to the set MQTT topic and uses an event-driven state machine / protocol corresponding to the message ("Normal", "High", "Low").
+        Turns on the RGB light that represents "Cooling" / "Heating" / "Normal".
+
+
+- **[Small_Projects](https://github.com/calleengstrom/Small_Projects)** - Here I post some of my own small projects that I work on at home in my free time, mainly to gain a better understanding and practical experience in Embedded Systems and Networking.
+
+---
 ### School Projects
 
 These are some of the projects I’m currently working on or have completed as part of my studies:
@@ -53,28 +77,6 @@ These are some of the projects I’m currently working on or have completed as p
 - **[Memory_game](https://github.com/calleengstrom/Memory_game)** – C/C++,AVR,Arduino, hackathon challenge
 - **[Cashregister](https://github.com/calleengstrom/Cashregister)** – Java,  school assignment
 
-### My Own Projects
-
-- **[Climate Control System](https://github.com/calleengstrom/Temperature_iot_demo)**
-- A simple yet complete IoT system, composed of:
-    
-    
-    - **Sensor** – ESP32 DHT11 Temp / Hum Sensor <br>
-        Collects temperature and humidity data. Uses ESP-IDF’s Wi-Fi and HTTP library to transfer JSON data to the backend.
-    
-    - **Backend** – Java Spring (Kotlin) – Hibernate – MySQL  <br>
-        Java backend for receiving POST API requests from the ESP32 sensor and storing temperature records in a MySQL database. It also retrieves data from the MySQL database for various HTTP API calls.
-        Responsible for the rule set / rule engine with three different states/rules ("Normal", "High", "Low") regarding the temperature. Publishes the corresponding message to the MQTT broker on a set topic.
-    
-    - **MQTT** – Mosquitto MQTT Broker   <br>
-        Configured and set up a Mosquitto MQTT broker on my local LAN.
-        
-    - **Actuator** – ESP32 (Simulates climate control center) with RGB light  <br>
-        The ESP32 uses ESP-IDF’s Wi-Fi and MQTT library to subscribe to the set MQTT topic and uses an event-driven state machine / protocol corresponding to the message ("Normal", "High", "Low").
-        Turns on the RGB light that represents "Cooling" / "Heating" / "Normal".
-
-
-- **[Small_Projects](https://github.com/calleengstrom/Small_Projects)** - Here I post some of my own small projects that I work on at home in my free time, mainly to gain a better understanding and practical experience in Embedded Systems and Networking.
 
 
 
