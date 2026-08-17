@@ -44,7 +44,7 @@ These are some of the projects I’m currently working on or have completed as p
 
 *The assignment provided a ready-made backend server, but I chose to develop my own C++ TCP server to gain a deeper understanding of TCP communication, client-server architecture and backend development.*
 
-** Smaller yet valuable school assignment
+**Smaller yet valuable school assignment**
 
 - **[Java Network-programming](https://github.com/calleengstrom/real_nvp)** - Java Network-programming course, contains school assignments with TCP / UDP network orientation.
 - **[User Auth MD5](https://github.com/calleengstrom/User_Auth_MD5)** – C++, school assignment  
@@ -85,8 +85,7 @@ These are some of the projects I’m currently working on or have completed as p
 Outside of school and coding, I like to stay active and explore the world. Some of my personal interests include:
 
 - Traveling and discovering new cultures  
-- Fitness, outdoor activities, and hiking, and most of all, skiing  
-- Playing video games  
+- Fitness, outdoor activities, like fishing hiking, and most of all skiing  
 - Spending time in nature and enjoying small adventures  
 
 
