@@ -6,16 +6,16 @@
 I’m 30 years old and based in Stockholm. I’m focused on problem solving, curious about technology and the world, and committed to continuous learning.  
 
 I’m currently studying **Embedded Systems and IoT**, where I build solid foundations in **C, C++, Java, and network programming**.  
-I enjoy exploring how hardware and software interact, experimenting with small projects, and learning new tools like docker, WSL independently outside of school.
+I enjoy exploring how hardware and software interact and experimenting with my own projects in order to broaden my knowledge in the vast world of IT.
 
 
 Some of my skills and tools i learn include:
 
-- Embedded systems & IoT projects  
-- Programming in C, C++, and Java  
-- WSL, Docker, MySQL (self-taught, outside of school projects)  
-- Hands-on hardware prototyping  
-- Network programming, computer communications, and cloud integration 
+- Embedded systems (C, C++)
+- Backend development (Java, Spring Boot, Kotlin, C++)
+- Database management (MySQL)
+- Network programming and protocols (HTTP, MQTT, TCP/IP)
+- Hands-on hardware prototyping
 
 You can reach me at 
 - **calle.engstrom@yh_nackademin.se**
@@ -24,49 +24,59 @@ You can reach me at
 ### School Projects
 
 These are some of the projects I’m currently working on or have completed as part of my studies:
-- **Keypad Access System** – C++/C, Arduino, ESP32, TCP/IP, UART, RFID, shift register and RGB LEDs. A three-part access control system where the Arduino handles the RFID reader, numpad, lock and status lights. The ESP32 bridges the Arduino to the backend over Wi-Fi/TCP. An RFID tag is first validated by the server, followed by PIN validation. If both are valid, the Arduino unlocks the system.
-  *The assignment provided a ready-made backend server, but I chose to develop my own C++ TCP server to gain a deeper understanding of TCP communication, client-server architecture and backend development.*
 
-  * **Arduino – [part3](https://github.com/calleengstrom/part3)** – Numpad, RFID, lock control, shift register and RGB status lights
-  * **C++ TCP Server – [part3_server](https://github.com/calleengstrom/part3_server)** – Custom-built TCP backend for handling communication and validating RFID tags and PIN codes
-  * **ESP32 Wi-Fi/UART – [esp_wifi_uart](https://github.com/calleengstrom/esp_wifi_uart)** – Connects the Arduino to the custom backend through Wi-Fi/TCP
+- **Keypad Access System** – C++/C, Arduino, ESP32, TCP/IP,A three-part access control system:
 
- 
-- **User Auth MD5** – C++, school assignment  
-- **pwcracker / passwordcracker** – C++, school assignment  
-- **User_Auth_MD5** – C++, school assignment  
-- **C_Card_System** – C, therminal based "card-scan system", school project  
-- **Memory_game** – C/C++,AVR,Arduino, hackathon challenge
-- **Cashregister** – Java,  school assignment
+    Arduino is built as a state machine with the states IDLE / Scanning, Await PIN, Access OK/Denied and timeout.
+  <br>
+    It uses an RFID scanner, a numpad for PIN entry, an RGB LED for status indication in different states, a servo motor and a buzzer for access simulation.
+  <br>
+    The Arduino holds the protocol for the payload and transfers the payload through UART to the ESP32.
+  <br>
+    The ESP32 only bridges the Arduino (via UART) to the backend over Wi-Fi/TCP.
+  <br>
+    The backend is a C++ TCP server that uses the same protocol for the payload, stores the valid RFID keys and matching PINs, and responds accordingly to events from the Arduino.
+  
+   
+     * **[Arduino](https://github.com/calleengstrom/part3)**
+     * **[C++ TCP Server](https://github.com/calleengstrom/part3_server)** 
+     * **[ESP32 Wi-Fi/UART](https://github.com/calleengstrom/esp_wifi_uart)**
+
+*The assignment provided a ready-made backend server, but I chose to develop my own C++ TCP server to gain a deeper understanding of TCP communication, client-server architecture and backend development.*
+
+** Smaller yet valuable school assignment
+
+- **[Java Network-programming](https://github.com/calleengstrom/real_nvp)** - Java Network-programming course, contains school assignments with TCP / UDP network orientation.
+- **[User Auth MD5](https://github.com/calleengstrom/User_Auth_MD5)** – C++, school assignment  
+- **[Password cracker](https://github.com/calleengstrom/pwcracker)** – C++, school assignment   
+- **[C_Card_System](https://github.com/calleengstrom/C_Card_System)** – C, therminal based "card-scan system", school project  
+- **[Memory_game](https://github.com/calleengstrom/Memory_game)** – C/C++,AVR,Arduino, hackathon challenge
+- **[Cashregister](https://github.com/calleengstrom/Cashregister)** – Java,  school assignment
 
 ### My Own Projects
 
-- **Small_Projects** - Here I post some of my own small projects that I work on at home in my free time, mainly to gain a better understanding and practical experience in Embedded Systems and Networking.
+- **[Climate Control System](https://github.com/calleengstrom/Temperature_iot_demo)**
+- A simple yet complete IoT system, composed of:
+    
+    
+    - **Sensor** – ESP32 DHT11 Temp / Hum Sensor <br>
+        Collects temperature and humidity data. Uses ESP-IDF’s Wi-Fi and HTTP library to transfer JSON data to the backend.
+    
+    - **Backend** – Java Spring (Kotlin) – Hibernate – MySQL  <br>
+        Java backend for receiving POST API requests from the ESP32 sensor and storing temperature records in a MySQL database. It also retrieves data from the MySQL database for various HTTP API calls.
+        Responsible for the rule set / rule engine with three different states/rules ("Normal", "High", "Low") regarding the temperature. Publishes the corresponding message to the MQTT broker on a set topic.
+    
+    - **MQTT** – Mosquitto MQTT Broker   <br>
+        Configured and set up a Mosquitto MQTT broker on my local LAN.
+        
+    - **Actuator** – ESP32 (Simulates climate control center) with RGB light  <br>
+        The ESP32 uses ESP-IDF’s Wi-Fi and MQTT library to subscribe to the set MQTT topic and uses an event-driven state machine / protocol corresponding to the message ("Normal", "High", "Low").
+        Turns on the RGB light that represents "Cooling" / "Heating" / "Normal".
 
-- **ESP32 Climate Control System -[Temperature_iot_demo](https://github.com/calleengstrom/Temperature_iot_demo)** - An IoT project combining an ESP32-based temperature sensor, DHT11, ESP-IDF, MQTT, and a Java/Spring backend with MySQL. The temperature ESP32 sends measurements to the Java backend over HTTP, where the data is stored in MySQL. The backend then publishes climate commands over MQTT to a second ESP32, which acts as a climate controller and responds with Normal, Heating, or Cooling states.
----
 
-###  Languages and Tools
+- **[Small_Projects](https://github.com/calleengstrom/Small_Projects)** - Here I post some of my own small projects that I work on at home in my free time, mainly to gain a better understanding and practical experience in Embedded Systems and Networking.
 
-<p align="left">
-  <a href="https://www.cprogramming.com/" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
-  </a>
-  <a href="https://www.w3schools.com/cpp/" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> 
-  </a>
-  <a href="https://www.java.com" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> 
-  </a>
-  <a href="https://www.docker.com/" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/> 
-  </a>
-  <a href="https://www.github.com/" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" width="40" height="40"/> 
-  </a>
-</p>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=calleengstrom&layout=compact&theme=tokyonight&count_private=true)
 
 ---
 
