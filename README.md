@@ -12,7 +12,7 @@ I enjoy exploring how hardware and software interact and experimenting with my o
 Some of my skills and tools i learn include:
 
 - Embedded systems (C, C++)
-- Backend development (Java, Spring Boot, Kotlin, C++)
+- Backend development (Java, Spring Boot, Gradle, C++)
 - Database management (MySQL)
 - Network programming and protocols (HTTP, MQTT, TCP/IP)
 - Hands-on hardware prototyping
