@@ -12,7 +12,7 @@ I enjoy exploring how hardware and software interact and experimenting with my o
 Some of my skills and tools i learn include:
 
 - Embedded systems (C, C++)
-- Backend development (Java, ASP.NET C#, C++)
+- Backend / Fullstack development (Java, C++) currently working with .NET, React.js
 - Database management (MySQL)
 - Hands-on hardware prototyping
 
