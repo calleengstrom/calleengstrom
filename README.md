@@ -12,9 +12,8 @@ I enjoy exploring how hardware and software interact and experimenting with my o
 Some of my skills and tools i learn include:
 
 - Embedded systems (C, C++)
-- Backend development (Java, Spring Boot, Gradle, C++)
+- Backend development (Java, ASP.NET C#, C++)
 - Database management (MySQL)
-- Network programming and protocols (HTTP, MQTT, TCP/IP)
 - Hands-on hardware prototyping
 
 You can reach me at 
@@ -30,7 +29,7 @@ You can reach me at
     - **Sensor** – ESP32 DHT11 Temp / Hum Sensor <br>
         Collects temperature and humidity data. Uses ESP-IDF’s Wi-Fi and HTTP library to transfer JSON data to the backend.
     
-    - **Backend** – Java Spring (Kotlin) – Hibernate – MySQL  <br>
+    - **Backend** – Java Spring (Gradle & Maven) – Hibernate – MySQL  <br>
         Java backend for receiving POST API requests from the ESP32 sensor and storing temperature records in a MySQL database. It also retrieves data from the MySQL database for various HTTP API calls.
         Responsible for the rule set / rule engine with three different states/rules ("Normal", "High", "Low") regarding the temperature. Publishes the corresponding message to the MQTT broker on a set topic.
     
